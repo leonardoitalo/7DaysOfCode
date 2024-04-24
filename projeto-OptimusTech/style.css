@@ -17,8 +17,8 @@ body {
 
 .cabecalho {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; 
+    align-items: center; 
     padding: 0px 32px;
     margin: 1em 4em;
 }
@@ -104,4 +104,39 @@ body {
     width: 792px;
     height: 60px;
     text-align: center;
+}
+
+/* SEÇÂO MÉTRICAS */
+
+.metricas-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 96px;
+    gap: 64px;
+}
+
+.metricas-item {
+    gap: 20px;
+}
+
+.metricas-item__titulo {
+    font-weight: 600;
+    font-size: 60px;
+    color: var(--cor-vermelho);
+    margin-bottom: 20px;
+}
+
+.metricas-item__subtitulo {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--cor-azul-escuro);
+    margin-bottom: 8px;
+}
+
+.metricas-item__paragrafo {
+    font-weight: 400;
+    font-size: 16;
+    height: 48px;
+    max-width: 280px;
+    color: var(--cor-fonte-cinza-claro);
 }
