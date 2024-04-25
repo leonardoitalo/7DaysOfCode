@@ -4,6 +4,7 @@
     --cor-fonte-cinza-escuro: #3A404E;
     --cor-fonte-cinza-claro: #667085;
     --cor-vermelho: #8E2424;
+    --cor-vermelho-trasparente: rgba(142, 36, 36, 0.05);
     --cor-branco-padrao: #FFFFFF;
     --cor-azul-escuro: #101828;
     --fonte-principal: "inter";
@@ -111,7 +112,7 @@ body {
 .metricas-container {
     display: flex;
     justify-content: center;
-    padding: 0 96px;
+    padding-bottom: 96px;
     gap: 64px;
 }
 
@@ -139,4 +140,50 @@ body {
     height: 48px;
     max-width: 280px;
     color: var(--cor-fonte-cinza-claro);
+}
+
+/* VAGAS */
+
+.vagas {
+    padding: 5em 0;
+    gap: 64px;
+}
+
+/* TALENTOS */
+
+.talentos__container {
+    padding: 0 32px;
+    gap: 2em;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.talentos__subtitulo {
+    font-weight: 500;
+    font-size: 0.9em;
+    background-color: var(--cor-vermelho-trasparente);
+    color: var(--cor-vermelho);
+    border-radius: 16px;
+    padding: 4px 12px;
+}
+
+.talentos__titulo {
+    font-weight: 600;
+    font-size: 2em;
+    color: var(--cor-azul-escuro);
+}
+
+.talentos__paragrafo {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--cor-fonte-cinza-claro);
+}
+
+.talentos__imagem {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
 }
